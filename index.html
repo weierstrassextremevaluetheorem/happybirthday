@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 16th Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body class="on-landing">
+    <!-- Landing Screen -->
+    <div id="landing-screen">
+        <div class="landing-content pixel-box">
+            <h1>Happy 16th Birthday!</h1>
+            <p class="subtitle">I made you a special cake...!!</p>
+            <button id="start-btn" class="pixel-button">START</button>
+        </div>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <h1>Happy Birthday!</h1>
+        <p class="subtitle">Click a slice to cut it, drag it out, then click it to reveal your message!</p>
+
+        <div id="cake-wrapper">
+            <canvas id="cheesecake" width="700" height="700"></canvas>
+        </div>
+
+        <div id="message-popup" class="hidden">
+            <div class="popup-inner pixel-box">
+                <p id="popup-text"></p>
+                <button id="popup-close" class="pixel-button">Yay!</button>
+            </div>
+        </div>
+
+        <div id="counter">
+            <span id="revealed-count">0</span> / 16 slices revealed
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <div id="spotify-player">
+        <!-- Spotify Embed for Laufey - Let You Break My Heart Again -->
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/6KBzft33aLJTLiTcAoJrKK?utm_source=generator&theme=0&autoplay=1"
+            width="100%" height="80" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
